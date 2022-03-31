@@ -5,16 +5,16 @@ import styles from "../styles/header.module.css";
 import weatherAppLogo from "../../assets/logo.png";
 
 const Header = () => {
-  const [currentRoute, setCurrentRoute] = useState("/");
+  const [currentRoute, setCurrentRoute] = useState("/Weather-Station");
 
   return (
     <nav>
       <ul id={styles.navItem}>
         <li className={styles.logo}>
           <Link
-            to="/"
-            className={currentRoute == "/" ? styles.active : ""}
-            onClick={() => setCurrentRoute("/")}
+            to="/Weather-Station"
+            className={currentRoute == "/Weather-Station" ? styles.active : ""}
+            onClick={() => setCurrentRoute("/Weather-Station")}
           >
             <img src={weatherAppLogo} height="48px" alt="weather app logo" />
           </Link>
@@ -22,12 +22,12 @@ const Header = () => {
         <li className={styles.navItemList}>
           <Link
             className={
-              currentRoute == "/"
+              currentRoute == "/Weather-Station"
                 ? [styles.navItemLink, styles.active].join(" ")
                 : styles.navItemLink
             }
-            to="/"
-            onClick={() => setCurrentRoute("/")}
+            to="/Weather-Station"
+            onClick={() => setCurrentRoute("/Weather-Station")}
           >
             Home
           </Link>
