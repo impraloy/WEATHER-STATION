@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 70px;
+  padding-top: 16px;
+  min-height: 81vh;
+  width: 95%;
+}
+.weatherDetailsSection {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 16px;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+
+.weatherDetailsHeader {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    color: #585767;
+}
+
+.outerWeatherCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0;
+  transition-property: box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in;
+}
+
+.innerWeatherCard {
+  width: 450px;
+  margin: 8px;
+  padding: 16px;
+  padding-top: 0;
+  box-shadow: 0 0 1px #585767;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.cardHeader {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+.cardSubHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.subHeader {
+  font-weight: bold;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+}
+hr {
+  border-top: 2px solid #f9f9f9;
+  opacity: 0.15;
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+@media only screen and (min-width: 360px) {
+  .innerWeatherCard {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .innerWeatherCard {
+    width: 350px;
+  }
+}

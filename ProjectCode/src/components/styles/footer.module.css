@@ -1,0 +1,9 @@
+footer {
+    background: #f9f9f9; 
+    padding-top: 32px;
+    margin-top: 24px; 
+    height: 48px; 
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", Courier, monospace;
+}

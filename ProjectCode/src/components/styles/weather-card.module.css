@@ -1,0 +1,45 @@
+a {
+  color: #585767;
+}
+.weatherCard {
+  width: 320px;
+  margin: 16px;
+  padding: 16px;
+  padding-top: 0;
+  box-shadow: 0 0 1px #585767;
+  border-radius: 3px;
+  transition-property: box-shadow;
+  transition-duration: 0.15s;
+  background-color: #fff;
+  transition-timing-function: ease-in;
+}
+.weatherCard:hover {
+  box-shadow: 0 10px 15px #585767;
+  cursor: pointer;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin-Bottom: 8px;
+}
+.cardHeader {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 16px;
+}
+.cardSubHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.subHeader {
+    font-weight: bold;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+hr {
+  border-top: 2px solid #f9f9f9;
+  opacity: 0.15;
+  width: 100%;
+  border-radius: 5px;
+}
