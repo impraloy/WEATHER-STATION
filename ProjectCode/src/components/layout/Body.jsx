@@ -77,7 +77,7 @@ const Body = () => {
     <>
       {dailyWeather && (
         <Routes>
-          <Route path="/" element={<Home days={days} data={dailyWeather} />} />
+          <Route path="/Weather-Station" element={<Home days={days} data={dailyWeather} />} />
           <Route
             path="/weather-details/:day"
             element={
